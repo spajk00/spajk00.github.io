@@ -4,6 +4,7 @@
     overflow: hidden;
 }
 
+
 .header-nav a {
     float: right;
     display: inline;
@@ -46,6 +47,7 @@
 .header-nav .icon {
     display: none;
 }
+
 
 
 /* Styling for mobile */
