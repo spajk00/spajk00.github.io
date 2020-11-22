@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    /*border: 1px solid red;*/
+}
+
+html, body {
+	height: 100% !important;
+	 height:100%;
+ 	 margin:0;
+  	 font-family: Roadway;
+  	 font-weight:300;
+  	 line-height:2em;
+  	 color:#666;
+}
+
+.wrapper {
+	background: #8A888A;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	min-height: 100%; 
+}
+
+.main-content {
+	padding: 50px 50px 150px 50px;
+	position: relative;
+	background: #536D85;
+}
+
+.main-content h1 {
+	color: #ffff;
+	font-size: 100px;
+	font-family: Roadway;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.main-content p {
+	font-size: 20px;
+	color: #ffff;
+	padding: 0 150px;
+}
+
+.section-dark{
+  font-size: 30px;
+  background-color:#222021;
+  color:#fff;
+  text-align:center;
+  padding:50px 80px;
+  }
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:50px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color: #222021;
+  color:#fff;
+  padding:10px;
+}
+
+.ptext .border .trans{
+  background-color:transparent;
+}
+
+}
+
+.pcenter
+{
+ 
+  top:25%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:50px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.6;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/index_img1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/index_img2.jpg');
+  min-height:600px;
+}
+
+.pimg3{
+  background-image:url('../img/index_img3.jpg');
+  min-height:600px;
+}
+
+.pimg4{
+  background-image:url('../img/index_img4.jpg');
+  min-height:600px;
+}
+
+.frame{
+  
+  background-color: #222021;
+  padding: 10px;
+  height: 250px;
+  width: 500px;
+  border-color: transparent;
+}
+
+.div_frame{
+	text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+}
+
+.C_button {
+  background-color: #222021;
+  color:#fff;
+  padding:10px;
+  
+
+}
+
+.C_button:hover {
+  background-color:#fff;
+  color: #222021;
+  padding:10px;
+
+  
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #65b1f7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #53708c;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #ECEBE8;
+  padding: 20px;
+}
+
+
+
+
+/* Styling for mobile */
+
+@media only screen and (max-device-width: 600px){
+    
+    .main-content h1 {font-size: 25px !important;}
+    
+    .main-content h2 {font-size: 20px !important;}
+    
+    .main-content p {font-size: 13px !important;}
+    
+
+    .mid-img {display: none;   }
+    
+    .main-content {padding: 20px 0px;}
+    
+    .main-content h1 {font-size: 25px;}
+    
+	.main-content p {padding: 0 2px;}
+
+	.pimg1, .pimg2, .pimg3{
+		    background-attachment:fixed;
+		  }
+
+	.ptext{font-size: 30px !important;}
+	.border{
+		font-size: 30px !important;
+		padding: 5px !important; 
+			}
+	.section-dark{font-size: 10px !important;}
+
+
+	.frame{
+			background-color: #222021;
+			padding: 10px;
+			height: 200px;
+			width: 300px;
+			bottom: 100%;
+			}
+
+	#bottom {
+		padding: 0;
+	}
+    
+
+}
+
+/* Styling for tablets and mobiles */
+
+@media screen and (max-device-width: 1200px) and (min-device-width: 601px) { 
+
+	.main-content h2 {font-size: 55px !important;}
+	.main-content p {padding: 0px 0px;}
+
+	.facebook-feed {
+		display: none;
+	}
+
+    
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1200px){
+	.facebook-feed .facebook-feed-container {
+		width: 400px;
+	}
+}
+
+
+/* Styling for mobiles*/
+
+@media only screen and (max-device-width: 780px){
+    .main-content .showing {
+        min-height: 500px;
+    }
+}
+
+@font-face {
+  font-family: Roadway;
+  src: url(BebasNeue-Regular.ttf);
+}
+
