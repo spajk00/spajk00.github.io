@@ -224,8 +224,27 @@ input[type=submit]:hover {
 			bottom: 100%;
 			}
 
+      .C_button {
+        font-size: 30px;
+        background-color: #222021;
+        color:#fff;
+        line-height:2em;
+        padding:5px;
+        white-space: normal;
+        }
+
+        .C_button:hover 
+        {
+        background-color:#fff;
+        color: #222021;
+        line-height:2em;
+        padding:5px;
+        font-size: 30px;
+        
+      }
+
 	#bottom {
-		padding: 0;
+		padding: 0px;
 	}
     
 
