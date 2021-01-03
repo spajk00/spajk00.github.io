@@ -1,0 +1,43 @@
+
+const rememberDiv = document.querySelector('.remember');
+const forgetDiv = document.querySelector('.forget');
+const form = document.querySelector('form');
+const username = document.querySelector('#enterusername');
+const password = document.querySelector('#enteruserpassword');
+const submitBtn = document.querySelector('#submitdata');
+
+
+const h1 = document.querySelector('h1');
+
+// Stop the form from submitting when a button is pressed
+form.addEventListener('submitdata', function(e) {
+  e.preventDefault();
+});
+
+// run function when the 'Say hello' button is clicked
+submitBtn.addEventListener('click', function() { 
+	  // store the entered name in web storage
+	localStorage.setItem( username, username.value);
+	localStorage.setItem('password', password.value);
+	  // run nameDisplayCheck() to sort out displaying the
+	  // personalized greetings and updating the form display
+	  nameDisplayCheck();
+});
+
+
+function nameDisplayCheck() {
+  // check whether the 'name' data item is stored in web Storage
+  if(localStorage.getItem('username')) {
+    // If it is, display personalized greeting
+    let name = localStorage.getItem('username');
+    h1.textContent = 'Welcome, ' + username.value;
+    
+   
+  } else {
+    
+    h1.textContent = 'Welcome to our website ';
+    
+  }
+}
+
+document.body.onload = nameDisplayCheck;
