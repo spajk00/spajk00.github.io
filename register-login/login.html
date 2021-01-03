@@ -18,8 +18,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/login.js"></script>
+        
 
 	</head>
 
@@ -34,10 +33,20 @@
 						<input type="password" name="password" id="password"/>
 						<input type="button" value="Login" id="submit" onclick="validate()"/>
 						</form>
-					<span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : user#123<br/>Password : password#123</b></span>
+					<div id="Reminder">Reminder</div>
 				</div>
 			</div>
+			
 		
-		
+		<script src="js/login.js"></script>
+		<script>
+			var Reminder = document.getElementById('Reminder');
+
+			var savedData_username = localStorage.getItem('username');
+			var savedData_pass = localStorage.getItem('password');
+
+			
+ 			Reminder.innerHTML = 'Username :' + savedData_username +'<span><p></p></span>'+ 'Password :' + savedData_pass ;
+		</script>
 	</body>
 </html>

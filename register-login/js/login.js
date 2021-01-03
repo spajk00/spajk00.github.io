@@ -1,12 +1,19 @@
 
-
+var savedData_username = localStorage.getItem('username');
+var savedData_pass = localStorage.getItem('password');
 
 var attempt = 3; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(){
+
+	//Fetches the Data from input
+
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "user#123" && password == "password#123"){
+
+
+//Checks if the Data is the same for Input fields and the localy saved data
+if ( username == savedData_username && password == savedData_pass){
 alert ("Login successfully");
 window.location = "success.html"; // Redirecting to other page.
 return false;
@@ -23,3 +30,5 @@ return false;
 }
 }
 }
+
+
