@@ -12,7 +12,7 @@ const submitBtn = document.querySelector('#submitdata');
 const h1 = document.querySelector('h1');
 
 
-function storageAvailable(type) {
+/*function storageAvailable(type) {
     var storage;
     try {
         storage = window[type];
@@ -43,7 +43,7 @@ if (storageAvailable('localStorage')) {
 else {
   // Too bad, no localStorage for us
 }
-
+*/
 
 // Stop the form from submitting when a button is pressed
 form.addEventListener('submitdata', function(e) {
@@ -53,7 +53,7 @@ form.addEventListener('submitdata', function(e) {
 // run function when the 'Say hello' button is clicked
 submitBtn.addEventListener('click', function() { 
 	  // store the entered name in web storage
-	localStorage.setItem( username, username.value);
+	localStorage.setItem( 'username', username.value);
 	localStorage.setItem('password', password.value);
 	  // run nameDisplayCheck() to sort out displaying the
 	  // personalized greetings and updating the form display
