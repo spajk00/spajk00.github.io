@@ -1,104 +1,234 @@
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" content="UX, User Experience Design, ux design, experience designer, user experience designer portfolio ">
 
-		<title>Index</title>
+  <meta name="description" 
+   content="Kacper Sieminski is a User Experience Design Student based in Helsingborg. With a specialization in the technical side of User Experience Design.">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/Footer.css">
-		<link rel="stylesheet" href="css/Header.css">
-
-	
-        <link rel="icon" type="image/png" href="img/favicon.png"/>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/script.js"></script>
-
-	</head>
-	<body>
-		
-		<div class="container-fluid wrapper">
-
-			<!-- Header -->
-			<div class="header-nav" id="topnav">
-				<a href="https://github.com/spajk00">Github</a>
-				<a href="uppgifter.html">Uppgifter</a>
-				<a href="https://www.google.com/">Source of knowledge</a>
-				<a href="contact.html">Kontakt</a>
-				<a href="gallery.html">Tentor</a>
-				<a href="index.html" class="active">Startsida</a>
-				<a href="javascript:void(0);" class="icon" onclick="navbarMenuToggle()">&#9776;</a>
-				<a href="index.html" id="logo"><img class="img-responsive img-fluid" src="img/Logo.png"></a>
-			</div>
+  <link rel="stylesheet" href="css/global_css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  <title>Sieminskis Ux Design Portfolio</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>K</span>acper <span>S</span>ieminski</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Webbutveckling</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#Snake" data-after="Snake">Snake game</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
 
-			<!-- Content img -->
-			<div class="col-md-12 col-sm-12 mid-img">
-				<img class="img-responsive img-fluid" src="img/Bg_art.png">
-			</div>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Kacper Sieminski and this is my website <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
 
-			<div class="col-md-12 col-sm-12 main-content">
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Webb<span>U</span>tveckling</h1>
+        <p>Sammanfattande sektion av min resa genom Webbutvecklings världen.</p>
+      </div>
+      <div class="service-bottom">
+        <a class="service-item" href="./page_index/uppgift1/lists.html">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Uppgift 1</h2>
+          <p>Första Uppgiften i kursen Webbprogrammering, inte mycket av något bara några olika typer avlistor och en bild.</p>
+        </a>
+        <a class="service-item" href="./page_index/uppgift2/index.html">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Parallax Website</h2>
+          <p>Andra Uppgiften i kursen Webbprogrammering, mer utökat css och basic HTML med bootstrap framework.</p>
+        </a>
+        <a class="service-item" href="./page_index/register-login/register.html">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Register/Login page med Localstorage för data</h2>
+          <p>Utöknining på en av gruppuppgifterna i Webbprogrammering kursen som utgick på att skapa en prototyp av en säkerhetss baserat sociala media.</p>
+        </a>
+        <a class="service-item" href="Index.html#hero">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Portfolio sida</h2>
+          <p>En komplett portfolio sida som omfattar allt jag lärde mig i kurserna hit tills, inkluderat med egna grejer.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
 
-				<div class="col-md-12 col-sm-12">
-					<h1>Välkommen</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc mauris, tempus non nunc nec, egestas porta quam. Vivamus vulputate diam id mi varius, vitae sagittis metus dictum. Cras pretium orci sit amet nulla lobortis, id lacinia tellus eleifend. Morbi neque eros, mollis in commodo sed, sodales vitae nisi. Vestibulum a ante massa. Vestibulum interdum id lectus eu pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac felis nec dolor vehicula posuere a quis erat. Nam varius libero mauris, id tincidunt neque laoreet ac. Phasellus malesuada ornare nulla, sit amet tincidunt purus elementum tempor. Sed interdum leo viverra ultrices ullamcorper. Integer eleifend porta pretium.</p>
-				</div>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Projekt 1</h1>
+            <h2>Tenta Affärsmannaskap</h2>
+            <p>Sammanfattande Tentamen på kurs 1 i EC Utbilldnings UX Designer program</p>
+          </div>
+          <a class="project-img" href="Documents/Papers/Hemtenta.pdf">
+            <img src="./img/img-project1.PNG" alt="img">
+          </a>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Projekt 2</h1>
+            <h2>UX Design Sprint</h2>
+            <p>Tentamen som omfattar hella processen av en Design Sprint i Kurs 2 av UX Designer Utbilldningen hos EC </p>
+          </div>
+          <a class="project-img" href="Documents/Papers/UX Design Sprint Portfolio Piece.pdf">
+            <img src="./img/img-project2.png" alt="img">
+          </a>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Projekt 3</h1>
+            <h2>Tentamen Prototyping</h2>
+            <p>Tentamen på prototyping processen och verktyg i Kurs 3 av UX Designer Utbildningen</p>
+          </div>
+          <a class="project-img" href="Documents/Papers/Hemtenta prototyping.pdf">
+            <img src="./img/img-project3.png" alt="img">
+          </a>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Projekt 4</h1>
+            <h2>Denna Webbsidan</h2>
+            <p>Detta projekt är resulatet av allt vi har lärt oss i kurs 4 av utbildningen.</p>
+          </div>
+          <a class="project-img" href="#">
+            <img src="./img/img-project4.png" alt="img">
+          </a>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Projekt 5</h1>
+            <h2>?</h2>
+            <p>Mer av mina större och mindre projekt kommer komma här senare</p>
+          </div>
+          <div class="project-img">
+            <img src="https://img.icons8.com/bubbles/100/000000/question-mark.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
 
-				<div class="col-md-12 col-sm-12" id="line"></div>
+  <!-- Snake Project Section -->
+  <section id="Snake">
+    <div class="projects container">
+      <div class="projects-header">
+      	<h1 class="section-title">Snake <span>Game</span></h1>
+      	 <div class="Snake">
+      	 	<div id="score_disiplay" class="score_disiplay">SCORE:<span id="score">0</span></div>
+      		<canvas id="snakeboard" width="400" height="400" border-style="hidden"></canvas>
+      	 </div>
+      	 <span>Use Arrow keys to control the snake, Restart the game by pressing "CTRL + R"</span> 
+      </div>
+  	</div>
+  </section>
+  <!-- End Snake Project Section -->
 
-				<div class="col-sm-12 col-md-12" id="bottom">
-					<div class="col-md-6 col-sm-12 showing">
-                        <div class="col-md-12" style="text-align: center; display: inline-flex;">
-                            <h2>Om mig</h2>
-                        </div>
-                       
-                        <div class="col-md-12" style="height: auto;">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-me.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2><span>UX Designer(Student)</span> and Developer</h2>
+        <p>Hello my name is Kacper Sieminski, a Developer and Student in EC Utbildning Helsingborg currently studying User Experience Design, I've graduated NTI-Gymnasiet Helsingborgs Technical course with specialization in Information-and Media in 2019 and after that I took a break from studying now I'm back at it and I'am looking for internship as an UX designer as part of my Education. in my free time i enjoy Coding and playing games, bellow you can find my CV. </p>
+        <a href="Documents/CV/Kacper_Sieminski_CV.pdf" class="cta">Download CV</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
 
-                        
-					</div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <a class ="contact-item" id="phone" onclick="fwoop();" href="_blank">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>Call or SmS</h2>
+          </div>
+        </a>
+        <a class ="contact-item" id="mail" onclick="boop();" href="_blank">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>Contact me</h2>
+          </div>
+         </a>
+        <a class ="contact-item" href="https://www.linkedin.com/in/kacper-sieminski-152068204/">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></div>
+          <div class="contact-info">
+            <h1>Linkedin</h1>
+          </div>
+          </a>
+        </div>
+      </div>
+  </section>
+  <!-- End Contact Section -->
 
-					<!-- <div id="horizontal-line"></div> -->
-
-					
-
-				</div>
-
-			</div>
-
-			<!-- Footer -->
-			<div class="col-md-12 col-sm-12 footer" style="padding: 0;">
-				<!-- Footer text -->
-				<div class="col-md-12 col-sm-12 footer-block" style="padding: 0;">
-                    <p>&copy; 2020 Kacper sieminski. All rights reserved | Sieminski.
-                     <i class="fa fa-facebook-square" aria-hidden="true"></i></p>
-                </div>
-			</div>
-
-		</div>
-
-		
-		<script>
-			function navbarMenuToggle() {
-		    	var x = document.getElementById("topnav");
-		    	if (x.className === "header-nav") {
-		        	x.className += " responsive";
-		    	} else {
-		     	   x.className = "header-nav";
-		    	}
-			}
-		</script>
-	</body>
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>K</span>acper <span>S</span>ieminski</h1></div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://twitter.com/spajk0012"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/kacper-sieminski-152068204/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Sieminski. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="js/scripts/nav.js"></script>
+  <script src="js/scripts/Snake.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="js/scripts/Cipher.js"></script>
 </html>
